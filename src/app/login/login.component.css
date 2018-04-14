@@ -1,0 +1,12 @@
+.translucentOverlay {
+  background-color: inherit
+}
+
+.input-field input:focus + label {
+   color: #b39ddb !important;
+}
+/* label underline focus color */
+.row .input-field input:focus {
+ border-bottom: 1px solid #b39ddb !important;
+ box-shadow: 0 1px 0 0 #b39ddb !important
+}

@@ -1,0 +1,42 @@
+<nav class="deep-purple lighten-3">
+  <ul>
+    <li><a>Test Front-End</a></li>
+  </ul>
+  <div class="button">
+    <a [class.btn-open]="!animateToggle" [class.btn-close]="animateToggle" (click)="toggleMenu()" href="#"></a>
+  </div>
+</nav>
+
+<div [@fadeToggle]="animateToggle" class="overlay">
+  <!-- <div> -->
+    <div id="left" class="split left">
+      <app-login class="center"></app-login>
+    </div>
+    <!-- <span class="divider"></span> -->
+    <div id="right" class="split right">
+      <div class="container center">
+          <div class="collection navCollection translucentOverlay">
+            <a class="collection-item black-text translucentOverlay navItem" href="#">Home</a>
+            <a class="collection-item black-text translucentOverlay navItem" href="#">About</a>
+            <a class="collection-item black-text translucentOverlay navItem" href="#">Contact</a>
+            <a class="collection-item black-text translucentOverlay navItem" href="#">Team</a>
+          </div>
+      </div>
+    </div>
+  <!-- </div> -->
+	<!-- <div class="wrap">
+		<ul class="wrap-nav">
+			<li> <a href="#" (click)="toggleMenu()">About</a> </li>
+			<li> <a href="#" (click)="toggleMenu()">Services</a> </li>
+			<li> <a href="#" (click)="toggleMenu()">Work</a> </li>
+		</ul>
+		<div class="social">
+			<div class="social-icon">
+				<a href="https://www.facebook.com/theutopia.cademy/" target="_blank"><i class="fa fa-facebook"></i></a>
+			</div>
+			<div class="social-icon">
+				<i class="fa fa-twitter"></i>
+			</div>
+		</div>
+	</div> -->
+</div>
