@@ -12,6 +12,7 @@ import { TeamComponent } from './team/team.component';
 import { ServicesComponent } from './services/services.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { LoginComponent } from './login/login.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { LoginComponent } from './login/login.component';
     TeamComponent,
     ServicesComponent,
     ContactusComponent,
-    LoginComponent
+    LoginComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,

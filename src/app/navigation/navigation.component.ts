@@ -16,11 +16,19 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 
 export class NavigationComponent implements OnInit {
   public animateToggle: boolean;
+  public zIndex: number;
   constructor() {
+    this.zIndex = -1;
+    this.animateToggle = false;
   }
   toggleMenu(){
     this.animateToggle = !this.animateToggle;
-    console.log("22");
+    if ( this.animateToggle ) {
+      this.zIndex = 99;
+    } else {
+      this.zIndex = -1;
+    }
+    console.log( this.zIndex );
   }
   ngOnInit() {
     this.animateToggle = false;
